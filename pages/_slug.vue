@@ -22,8 +22,15 @@ export default {
         max-width: 800px;
     }
     h1 {
-        font-size: 28px;
-        font-weight: 900;
+        font-size: 30px;
+        font-weight: 700;
         margin-bottom: 30px;
+        color: #191F28;
+    }
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        text-decoration: none;
+        color: #454F5D;
     }
 </style>

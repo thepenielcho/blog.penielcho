@@ -13,7 +13,10 @@
             <div class="sign-group float--right toggle">
                 <ul class="sub-menu">
                     <li><a href="#">Posts</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li>
+                        <nuxt-link to="/projects" class="alta">Projects</nuxt-link>
+                        <!-- <a href="#">Projects</a> -->
+                    </li>
                     <li><a href="https://github.com/thepenielcho" target="blank">GitHub</a></li>
                 </ul>
             </div>
@@ -24,7 +27,7 @@
     </header>
 </template>
 
-<style>
+<style scoped>
 .clearfix::after{
     content: "";
     clear: both;
@@ -89,7 +92,19 @@ header .sub-menu li a{
     text-align: center;
     color: #000;
 }
+header .sub-menu li .alta{
+    margin-right: 20px;
+    padding: 8px;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: #000;
+}
 header .sub-menu li a:hover{
+    color: #2178FF;
+}
+header .sub-menu li .alta:hover{
     color: #2178FF;
 }
 #toggle-btn {

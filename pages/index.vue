@@ -2,7 +2,7 @@
   <div class="home-page">
     <Featured />
     <Banner1 />
-    <h2>Latest Posts</h2>
+    <!-- <h2>Latest Posts</h2> -->
     <div class="articles">
       <div class="article" v-for="article of articles" 
       :key="article">
@@ -37,7 +37,7 @@ export default {
 
 <style>
   .home-page {
-    padding: 50px 30px;
+    padding: 45px 30px;
   }
   h2 {
     margin-bottom: 30px;
