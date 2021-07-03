@@ -10,7 +10,7 @@
                 <nuxt-link to='/github-ipynb-loading'>
                     <div class="posttitle">깃헙 ipynb 파일 로딩이 안 돼요.</div>
                 </nuxt-link>
-                <div class="postdes">콜랩, 주피터에선 잘 열리던 ipynb 파일이 깃헙에서만 열리지 않는다면 해당 파일에서 사용한 패키지나 모듈이 깃헙에서 렌더링이 되지 않은 것! 해결 방법에 대해 알아보자.
+                <div class="postdes">콜랩, 주피터에선 잘 열리던 ipynb 파일이 깃헙에서만 열리지 않는다면 해당 파일에서 사용한 패키지나 모듈이 깃헙에서 렌더링이 되지 않은 것! <br> 해결 방법에 대해 알아보자.
                 </div>
                 <nuxt-link to='/github-ipynb-loading'>
                     <div class="postdetails">더 알아보기 ></div>
@@ -48,21 +48,25 @@ export default {
         margin: 20px 0;
     }
     .posttitle {
-        font-size: 30px;
-        font-weight: bold;
-        color: #000;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #333d4b;
         margin-bottom: 19px;
     }
+    .posttitle:hover {
+        color: #3282F6;
+        transition: 0.2s;
+    }
     .postdes {
-        font-size: 18px;
+        font-size: 1rem;
         font-weight: 300;
-        color: #A4ABB5;
+        color: #4e5968;
         margin-bottom: 23px;
         line-height: 130%;
     }
     .postdetails {
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 400;
         color: #3282F6;
     }
 </style>
