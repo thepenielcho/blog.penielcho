@@ -33,4 +33,8 @@ export default {
         text-decoration: none;
         color: #454F5D;
     }
+    img {
+        width: 740px;
+        margin: 10px auto;
+    }
 </style>
