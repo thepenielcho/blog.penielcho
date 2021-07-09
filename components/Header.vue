@@ -12,7 +12,7 @@
 
             <div class="sign-group float--right toggle">
                 <ul class="sub-menu">
-                    <li><a href="#">Posts</a></li>
+                    <li><a href="https://www.blog.penielcho.com">Posts</a></li>
                     <li>
                         <nuxt-link to="/projects" class="alta">Projects</nuxt-link>
                         <!-- <a href="#">Projects</a> -->

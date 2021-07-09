@@ -2,17 +2,17 @@
     <div class="container">
         <div class="inner">
             <div class="postpic">
-                <nuxt-link to='/github-ipynb-loading'>
+                <nuxt-link to='/'>
                     <img src="../assets/resources/featured-post-img1.png" alt="">
                 </nuxt-link>
             </div>
             <div class="txtinner">
-                <nuxt-link to='/github-ipynb-loading'>
+                <nuxt-link to='/'>
                     <div class="posttitle">깃헙 ipynb 파일 로딩이 안 돼요.</div>
                 </nuxt-link>
                 <div class="postdes">콜랩, 주피터에선 잘 열리던 ipynb 파일이 깃헙에서만 열리지 않는다면 해당 파일에서 사용한 패키지나 모듈이 깃헙에서 렌더링이 되지 않은 것! <br> 해결 방법에 대해 알아보자.
                 </div>
-                <nuxt-link to='/github-ipynb-loading'>
+                <nuxt-link to='/'>
                     <div class="postdetails">더 알아보기 ></div>
                 </nuxt-link>
             </div>
