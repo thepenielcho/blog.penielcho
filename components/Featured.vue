@@ -50,7 +50,7 @@ export default {
     .posttitle {
         font-size: 2rem;
         font-weight: 600;
-        color: #333d4b;
+        color: #333D4B;
         margin-bottom: 19px;
     }
     .posttitle:hover {

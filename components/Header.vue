@@ -12,7 +12,10 @@
 
             <div class="sign-group float--right toggle">
                 <ul class="sub-menu">
-                    <li><a href="https://www.blog.penielcho.com">Posts</a></li>
+                    <li>
+                        <!-- <a href="https://www.blog.penielcho.com">Posts</a> -->
+                        <nuxt-link to="/">Posts</nuxt-link>
+                    </li>
                     <li>
                         <nuxt-link to="/projects" class="alta">Projects</nuxt-link>
                         <!-- <a href="#">Projects</a> -->
@@ -90,7 +93,7 @@ header .sub-menu li a{
     font-size: 16px;
     font-weight: 300;
     text-align: center;
-    color: #000;
+    color: #333D4B;
 }
 header .sub-menu li .alta{
     margin-right: 20px;
@@ -99,7 +102,7 @@ header .sub-menu li .alta{
     font-size: 16px;
     font-weight: 300;
     text-align: center;
-    color: #000;
+    color: #333D4B;
 }
 header .sub-menu li a:hover{
     color: #2178FF;

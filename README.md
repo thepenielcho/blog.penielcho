@@ -1,8 +1,6 @@
 ![github banner](./assets/resources/READMEimg.png)
 
-<h3 align="center">
-  <a href="https://www.blog.penielcho.com">Peniel Blog</a>
-</h3>
+# <a href="https://www.blog.penielcho.com">Peniel Blog</a>
 
 ---
 

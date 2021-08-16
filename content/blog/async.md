@@ -1,9 +1,9 @@
 ---
-title: My first blog post
+title: Async Test
 description: welcome to my fist post
-slug: first-post
+slug: async
 img: blog-test-1.png
-datetime: 2010. 07. 12.
+datetime: 2099. 07. 12.
 category: 디버깅
 author: Peniel Cho
 ---
