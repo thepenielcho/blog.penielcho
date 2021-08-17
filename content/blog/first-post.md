@@ -2,7 +2,7 @@
 title: My first blog post
 description: welcome to my fist post
 slug: first-post
-img: blog-test-1.png
+img: ipython-github-error.png
 datetime: 2010. 07. 12.
 category: 디버깅
 author: Peniel Cho

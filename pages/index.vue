@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
   .home-page {
-    padding: 45px 30px;
+    padding: 2.8rem 1.8rem;
   }
   /* h2 {
     margin-bottom: 30px;
@@ -81,18 +81,30 @@ export default {
   .articles {
     margin: 0 auto;
     max-width: 1080px;
+    /* background-color: lightslategrey; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .article{
-    margin: 1rem 2.7rem 2rem;
+    margin: 1rem 0 2rem;
     display: inline-flex;
+    width: 50%;
+    /* height: ; */
+    /* display: flex; */
+    /* justify-content: space-between; */
   }
   .article-inner{
+    margin: 0 auto;
     position: relative;
-    width: 28rem;
+    max-width: 90%;
   }
   .article-inner img {
     width: 100%;
-    max-width: 450px;
+    max-width: 100%;
+    /* max-height: 19rem; */
+    border-radius: 1rem;
+    box-sizing: border-box;
   }
   .article-inner .detail{
     padding: 1rem 0rem;

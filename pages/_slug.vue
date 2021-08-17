@@ -1,7 +1,9 @@
 <template>
     <article>
+        <!-- <img :src="require(`~/assets/resources/${article.img}`)" alt="" class="main-article-image" /> -->
         <h1 class="article-title">{{article.title}}</h1>
         <p class="dateby">{{article.datetime}} · by {{article.author}}</p>
+        <img :src="require(`~/assets/resources/${article.img}`)" alt="" class="main-article-image" />
         <nuxt-content :document="article" />
     </article>
 </template>
@@ -34,7 +36,10 @@ export default {
     article .dateby{
         font-weight: 500;
         text-align: center;
-        margin: 1.4rem 0 2.5rem;
+        margin: 1.4rem 0 2rem;
+    }
+    article .main-article-image{
+        margin: 1rem 0 5rem;
     }
     article h2{
         font-size: 1.55rem;
@@ -54,10 +59,11 @@ export default {
         text-decoration: none;
         color: #6B7684;
         line-height: 1.8;
+        word-break: keep-all;
     }
     article img {
-        width: 740px;
-        margin: 1.2rem auto;
+        max-width: 740px;
+        margin: 2rem auto;
         box-sizing: border-box;
         border-radius: 1rem;
     }

@@ -2,7 +2,7 @@
 title: Zero
 description: welcome to my fist post
 slug: zero
-img: blog-test-1.png
+img: ipython-github-error.png
 datetime: 2025. 07. 12.
 category: 디버깅
 author: Peniel Cho

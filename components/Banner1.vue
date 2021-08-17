@@ -17,14 +17,14 @@
         /*포지션이 없는 경우에는 부모요소에 position relative 무조건적으로 추가해주기!*/
     }
     .ad-banner {
-        width: 1080px;
+        max-width: 1080px;
         height: 105px;
         /* box-sizing: border-box; */
         /* object-fit: contain; */
         margin: auto;
     }
     img {
-        width: 1080px;
+        max-width: 1080px;
         height: 105px;
     }
 </style>
