@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
-    <Featured />
-    <Banner1 />
+    <!-- <Featured />
+    <Banner1 /> -->
     <!-- <h2>Latest Posts</h2> -->
     <div class="articles">
         <div class="article" v-for="article of articles" :key="article">
@@ -84,7 +84,7 @@ export default {
     /* background-color: lightslategrey; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .article{
     margin: 1rem 0 2rem;

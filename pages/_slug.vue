@@ -5,16 +5,27 @@
         <p class="dateby">{{article.datetime}} · by {{article.author}}</p>
         <img :src="require(`~/assets/resources/${article.img}`)" alt="" class="main-article-image" />
         <nuxt-content :document="article" />
+        <!-- <Prevnext /> -->
+
+        <Prevnext :prev="prev" :next="next" />
     </article>
 </template>
 
 <script>
+// import Prevnext from '~/components/Prevnext.vue';
 export default {
+    // components: { Prevnext },
     async asyncData({ $content, params }) {
         const article = await $content('blog', params.slug)
         .fetch();
 
-        return { article }
+        const [prev, next] = await $content('blog')
+        .only(['title', 'slug'])
+        .sortBy('datetime', 'desc')
+        .surround(params.slug)
+        .fetch()
+
+        return { article, prev, next }
     }
 }
 </script>
@@ -36,10 +47,10 @@ export default {
     article .dateby{
         font-weight: 500;
         text-align: center;
-        margin: 1.4rem 0 2rem;
+        margin: 1.4rem 0 2.5rem;
     }
     article .main-article-image{
-        margin: 1rem 0 5rem;
+        margin: 2rem 0 5rem;
     }
     article h2{
         font-size: 1.55rem;
@@ -62,6 +73,7 @@ export default {
         word-break: keep-all;
     }
     article img {
+        display: block;
         max-width: 740px;
         margin: 2rem auto;
         box-sizing: border-box;

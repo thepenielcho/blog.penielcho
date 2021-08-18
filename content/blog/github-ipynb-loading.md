@@ -22,6 +22,8 @@ author: Peniel Cho
 ![해당 ipynb 파일 내용](/github-ipynb-loading/03.png)
 ### 바인더를 통해 build
 ![binder 엠블럼](/github-ipynb-loading/04.png)
+
+
 뷰어 우측 상단에 보면 반 잘린 올림픽 엠블럼 같은 버튼이 있는데, 이걸 클릭해보자.
 ![binder 실행 화면](/github-ipynb-loading/05.png)
 클릭 후에 binder라는 창이 뜨며 주피터 노트북 파일 렌더를 시작한다. 잠깐 기다려주면 아래와 같이 주피터 화면이 뜬다.
