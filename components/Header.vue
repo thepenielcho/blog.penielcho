@@ -5,19 +5,6 @@
             <div class="menu-group float--left">
                 <div class="logo">
                     <nuxt-link to="/">
-                        <!-- <img src="../assets/resources/Logo.png" alt="Logo"> -->
-                        <!-- <svg width="100%" height="100%" viewBox="0 0 500 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                            <g transform="matrix(4.57703,0,0,4.57703,-134.15,-85.4211)">
-                                <text x="31.304px" y="38.437px" style="font-family:'Inter-Regular_Bold', 'Inter', sans-serif;font-size:20.028px;fill:rgb(33,120,255);">P<tspan x="43.907px " y="38.437px ">e</tspan>niel</text>
-                                <text x="94.09px" y="38.437px" style="font-family:'Inter-Regular_Bold', 'Inter', sans-serif;font-size:20.028px;fill:rgb(50,61,75);">Blog</text>
-                            </g>
-                        </svg> -->
-                        <!-- <svg width="100%" height="100%" viewBox="0 0 500 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                            <g transform="matrix(4.57703,0,0,4.57703,-134.15,-85.4211)">
-                                <text x="31.304px" y="38.437px" style="font-family:'Inter-Regular_Bold', 'Inter', sans-serif;font-size:20.028px;fill:rgb(33,120,255);">P<tspan x="43.907px " y="38.437px "></tspan>eniel</text>
-                                <text x="94.09px" y="38.437px" style="font-family:'Inter-Regular_Bold', 'Inter', sans-serif;font-size:20.028px;fill:rgb(50,61,75);">Blog</text>
-                            </g>
-                        </svg> -->
                         <svg width="100%" height="100%" viewBox="0 0 500 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                             <g transform="matrix(4.57703,0,0,4.57703,-134.15,-85.4211)">
                                 <path d="M32.57,38.437L32.57,23.871L38.317,23.871C39.422,23.871 40.363,24.081 41.14,24.501C41.918,24.92 42.512,25.501 42.922,26.243C43.332,26.985 43.537,27.84 43.537,28.807C43.537,29.774 43.329,30.628 42.911,31.367C42.494,32.107 41.891,32.683 41.101,33.095C40.312,33.508 39.358,33.714 38.239,33.714L34.576,33.714L34.576,31.246L37.741,31.246C38.333,31.246 38.823,31.143 39.209,30.937C39.596,30.731 39.885,30.444 40.077,30.076C40.269,29.709 40.365,29.286 40.365,28.807C40.365,28.323 40.269,27.9 40.077,27.537C39.885,27.175 39.595,26.893 39.206,26.691C38.817,26.49 38.324,26.389 37.727,26.389L35.65,26.389L35.65,38.437L32.57,38.437Z" style="fill:rgb(33,120,255);fill-rule:nonzero;"/>
@@ -39,14 +26,20 @@
             <div class="sign-group float--right toggle">
                 <ul class="sub-menu">
                     <li>
-                        <!-- <a href="https://www.blog.penielcho.com">Posts</a> -->
-                        <nuxt-link to="/">Posts</nuxt-link>
+                        <div>
+                            <nuxt-link to="/" class="alta">Posts</nuxt-link>
+                        </div>
                     </li>
                     <li>
-                        <nuxt-link to="/projects" class="alta">Projects</nuxt-link>
-                        <!-- <a href="#">Projects</a> -->
+                        <div>
+                            <nuxt-link to="/projects" class="alta">Projects</nuxt-link>
+                        </div>
                     </li>
-                    <li><a href="https://github.com/thepenielcho" target="blank">GitHub</a></li>
+                    <li>
+                        <div>
+                            <a href="https://github.com/thepenielcho" target="blank" class="alta">GitHub</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
 
@@ -118,18 +111,18 @@ header .sub-menu li a{
     padding: 8px;
     display: block;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
-    color: #333D4B;
+    color: #4E5968;
 }
 header .sub-menu li .alta{
     margin-right: 20px;
     padding: 8px;
     display: block;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
-    color: #333D4B;
+    color: #4E5968;
 }
 header .sub-menu li a:hover{
     color: #2178FF;

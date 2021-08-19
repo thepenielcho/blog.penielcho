@@ -24,5 +24,6 @@ export default {
         text-align: center;
         font-size: 1.5rem;
         color: #333D4B;
+        line-height: 1.4;
     }
 </style>

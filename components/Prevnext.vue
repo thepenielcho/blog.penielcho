@@ -1,19 +1,25 @@
 <template>
     <div class="prevnext-container">
-        <div class="prev-container">
+        <NuxtLink class="prev-container" v-if="prev" :to="{ name: 'slug', params: { slug: prev.slug } }">
             <div class="prev-nav">Previous Post</div>
-            <NuxtLink class="prev-link" v-if="prev" :to="{ name: 'slug', params: { slug: prev.slug } }">
-            {{ prev.title }}
-            </NuxtLink>
-            <span v-else>이전 포스트가 없습니다.</span>
-        </div>
-        <div class="next-container">
+            <div class="prev-link">{{ prev.title }}</div>
+        </NuxtLink>
+        <nuxt-link v-else to='/' class="prev-container">
+                    <div class="prev-nav">No Previous Post</div>
+                    <div class="prev-link">
+                        <span>홈으로 돌아가기</span>
+                    </div>
+        </nuxt-link>
+        <NuxtLink class="next-container" v-if="next" :to="{ name: 'slug', params: { slug: next.slug } }">
             <div class="next-nav">Next Post</div>
-            <NuxtLink class="next-link" v-if="next" :to="{ name: 'slug', params: { slug: next.slug } }">
-            {{ next.title }}
-            </NuxtLink>
-            <span v-else>다음 포스트가 없습니다.</span>
-        </div>
+            <div class="next-link">{{ next.title }}</div>
+        </NuxtLink>
+        <nuxt-link v-else to='/' class="next-container">
+            <div class="next-nav">No Next Post</div>
+            <div class="next-link">
+                <span>홈으로 돌아가기</span>
+            </div>
+        </nuxt-link>
     </div>
 </template>
 
@@ -52,6 +58,18 @@
     
     border-radius: 1rem;
 }
+.prev-container:hover{
+    background-color: #E7F3FF;
+    transition: 0.3s;
+}
+.prev-container:hover > .prev-nav{
+    color: #3182F6;
+    transition: 0.3s;
+}
+.prev-container:hover > .prev-link{
+    color: #3182F6;
+    transition: 0.3s;
+}
 .prev-container .prev-nav{
     color: #444F61;
     font-weight: 600;
@@ -71,6 +89,18 @@
     width: 45%;
     background-color: #F2F4F6;
     border-radius: 1rem;
+}
+.next-container:hover{
+    background-color: #E7F3FF;
+    transition: 0.3s;
+}
+.next-container:hover > .next-nav{
+    color: #3182F6;
+    transition: 0.3s;
+}
+.next-container:hover > .next-link{
+    color: #3182F6;
+    transition: 0.3s;
 }
 .next-container .next-nav{
     color: #444F61;
@@ -117,3 +147,22 @@ F8FAFC
     margin: 0 0 1rem;
 
 이 조합은 hover로 사용하도록 하자~
+
+    <div class="prevnext-container">
+        <div class="prev-container">
+            <NuxtLink class="prev-link" v-if="prev" :to="{ name: 'slug', params: { slug: prev.slug } }">
+                <div class="prev-nav">Previous Post</div>
+                <NuxtLink class="prev-link" v-if="prev" :to="{ name: 'slug', params: { slug: prev.slug } }">
+                {{ prev.title }}
+                </NuxtLink>
+                <span v-else>이전 포스트가 없습니다.</span>
+            </NuxtLink>
+        </div>
+        <div class="next-container">
+            <div class="next-nav">Next Post</div>
+            <NuxtLink class="next-link" v-if="next" :to="{ name: 'slug', params: { slug: next.slug } }">
+            {{ next.title }}
+            </NuxtLink>
+            <span v-else>다음 포스트가 없습니다.</span>
+        </div>
+    </div>

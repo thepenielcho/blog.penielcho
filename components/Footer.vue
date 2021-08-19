@@ -19,12 +19,12 @@
             <!-- <li><a href="#">Email</a></li>
             <li><a href="#">Linkedin</a></li>
             <li><a href="#">LINE</a></li> -->
-            <li><a href="#">Email</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Linkedin</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Life</a></li>
+            <li><a href="mailto:mail@penielcho.com">Email</a></li>
+            <li><nuxt-link to="/" class="li-alike">Blog</nuxt-link></li>
+            <li><a href="https://github.com/thepenielcho" target="blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/peniel-cho/" target="blank">Linkedin</a></li>
+            <li><a href="https://twitter.com/ChoPeniel" target="blank">Twitter</a></li>
+            <li><a href="https://blog.naver.com/penielcho98" target="blank">Life</a></li>
             </ul>
 
             <a href="#" class="logo">
@@ -100,7 +100,13 @@ footer .site-links li {
 footer .site-links li a {
     color: #4078c0;
 }
+footer .site-links li .li-alike{
+    color: #4078c0;
+}
 footer .site-links li a:hover {
+    text-decoration: underline;
+}
+footer .site-links li .li-alike:hover {
     text-decoration: underline;
 }
 footer .logo {
