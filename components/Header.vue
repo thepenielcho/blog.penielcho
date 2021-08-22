@@ -26,17 +26,17 @@
             <div class="sign-group float--right toggle">
                 <ul class="sub-menu">
                     <li>
-                        <div>
+                        <div class="header-link-container">
                             <nuxt-link to="/" class="alta">Posts</nuxt-link>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="header-link-container">
                             <nuxt-link to="/projects" class="alta">Projects</nuxt-link>
                         </div>
                     </li>
                     <li>
-                        <div>
+                        <div class="header-link-container">
                             <a href="https://github.com/thepenielcho" target="blank" class="alta">GitHub</a>
                         </div>
                     </li>
