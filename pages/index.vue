@@ -2,7 +2,7 @@
   <div class="home-page">
     <!-- <Featured />
     <Banner1 /> -->
-    <!-- <h2>Latest Posts</h2> -->
+    <h2>Latest Posts</h2>
     <div class="articles">
         <div class="article" v-for="article of articles" :key="article">
           <nuxt-link class="article-nuxtlink" :to="{ name: 'slug', params: { slug: article.slug } }">
